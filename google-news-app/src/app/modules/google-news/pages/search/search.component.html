@@ -1,0 +1,18 @@
+<!-- <p>
+  new search works!
+</p> -->
+
+<ul>
+  <li *ngFor="let article of (newsStore.state$ | async).articles" style="white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90ch;">
+     
+    <p>{{ article.title}}</p>
+    <p> {{ article.author }}</p>
+    <p>{{ article.source.name}}</p>
+    <a href="{{article.url}}">Read more...</a>
+    <br>
+    
+  </li>
+</ul>

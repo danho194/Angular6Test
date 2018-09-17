@@ -1,0 +1,28 @@
+<!-- <p>
+  users works!
+</p> -->
+<h1>Users</h1>
+
+<ul>
+  <li *ngFor="let user of (usersStore.state$ | async).data" style="white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90ch;">
+     
+    <p>{{ user.first_name}}</p>
+    <p> {{ user.last_name }}</p>
+    <p (click)="onClickUserDetails(user);"><span>Go to user id: {{ user.id}}</span></p>
+    
+    <!-- <a [routerLink]="['/users', user.id]">Go to user details</a>  -->
+
+    <br>
+    
+  </li>
+</ul>
+
+
+
+
+
+
+
