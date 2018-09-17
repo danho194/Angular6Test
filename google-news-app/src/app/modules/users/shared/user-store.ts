@@ -44,7 +44,7 @@ export class UsersStore extends Store<UsersResult> {
     }
 
     updateUser(updatedUser: User): void {
-        // updates stte, here we could also call api to update and it could ru in the background
+        // updates state, here we could also call api to update and it could run in the background
         this.setState({
             ...this.state,
             data: this.state.data.map(user => {

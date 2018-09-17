@@ -12,12 +12,7 @@ export class UsersComponent implements OnInit {
 
   constructor(public usersStore: UsersStore,  private router: Router) { }
 
-  ngOnInit() {
-    this.usersStore.state$.subscribe(state => {
-      let t = state;
-      t;
-    });
-  }
+  ngOnInit() {}
 
   onClickUserDetails(user: User): void {
 
